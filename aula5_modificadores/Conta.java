@@ -6,9 +6,23 @@ class Conta{
 
 	public int numero;
 	public String nome;
-	private double saldo;
+	public double saldo;
 	public double limite;
 
 
+	void saca(double valorASacar){
+		if (this.limite >= valorASacar) {
+			this.saldo -= valorASacar;
+		}else{
+			System.out.println("Você não pode sacar o valor menor que seu limite! ");
+		}
+	}
+
+
+	void deposita(double valorASerDepositado){
+
+		this.saldo += valorASerDepositado;
+
+	}
 }
 
