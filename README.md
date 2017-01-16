@@ -1,4 +1,4 @@
-# javaPrimeirosPassos
+# CursoJavaPrimeirosPassos
 <meta charset="utf-8">
 <h1>Curso Java I: Primeiros passos</h1><br><br><br><br><br>
 
