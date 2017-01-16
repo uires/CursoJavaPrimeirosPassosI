@@ -4,29 +4,18 @@
 
 
 AULA 1- A linguagem Java<br>
-Breve historia a respeito da linguaguem Java
-AULA 2- Variáveis e fluxo
 
-AULA 3- Começando com Orientação a objetos
+AULA 2- Variáveis e fluxo<br>
 
-AULA 4- Arrays
+AULA 3- Começando com Orientação a objetos<br>
 
-AULA 5- Modificadores de acesso
+AULA 4- Arrays<br>
 
-AULA 6- Construtores
+AULA 5- Modificadores de acesso<br>
 
-AULA 7- Atributos e métodos estáticos
+AULA 6- Construtores<br>
 
-
-
-
-
-
-
-
-
-
-
+AULA 7- Atributos e métodos estáticos<br>
 
 
 
