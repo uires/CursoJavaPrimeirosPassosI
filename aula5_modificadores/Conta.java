@@ -1,28 +1,63 @@
 class Conta{
-	/*Adicione o modificador de visibilidade (private ou public, se necessário) para cada atributo e método da classe Funcionario. 
-	Tente criar um Funcionario no main e modificar ou ler um de seus atributos privados. O que acontece?
-	Compartilhe o código de sua classe Funcionario.*/
+	
 
-
+	
 	public int numero;
-	public String nome;
-	public double saldo;
+	Cliente titular;
+	private double saldo;
 	public double limite;
+	
 
+	public void frase(String frase){
 
-	void saca(double valorASacar){
-		if (this.limite >= valorASacar) {
-			this.saldo -= valorASacar;
-		}else{
-			System.out.println("Você não pode sacar o valor menor que seu limite! ");
-		}
+		System.out.println(frase);
 	}
 
 
-	void deposita(double valorASerDepositado){
+	public void depositaValor(double valor){
+
+		this.saldo = this.saldo + valor;
+		System.out.println("Senhor[a] " + this.titular.nome + " seu saldo é: R$" + getSaldo());
+		
+	}
+
+
+	public double getSaldo(){
+
+		return this.saldo;
+	}
+
+
+	public void saca(double valorASacar){
+		if (this.limite >= valorASacar && this.saldo > valorASacar) {
+			this.saldo -= valorASacar;	
+			frase("Saque executado com sucesso !");
+			frase("Saque de: R$ " + valorASacar);
+			frase("Seu saldo atual é: R$ " + this.getSaldo());
+
+
+		}else{
+			frase("Você não pode sacar o valor menor que seu limite! ");
+		}
+	}
+
+	public void setLimit(double newLimit){
+
+		this.limite = newLimit;
+
+
+	}
+
+	public void deposita(double valorASerDepositado){
 
 		this.saldo += valorASerDepositado;
+		frase("Seu novo saldo é: R$ " + this.saldo);	
 
 	}
 }
 
+class Cliente {
+	String nome;
+	String endereco;
+
+}

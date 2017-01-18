@@ -2,21 +2,24 @@ class Funcionario{
 	public static void main(String[] args) {
 	
 		Conta joao = new Conta();
+		
+		joao.titular = new Cliente ();
 
-		joao.saldo = 554.1;
-		joao.nome = "JOAO BATISTA SANTANA" ;
-		joao.limite = 600;
+
+		joao.titular.nome = "JOAO DORIS";
+		joao.depositaValor(599.1);
 		joao.numero = 221;
 
-		System.out.println(joao.saldo);
 
+		joao.setLimit(600.0);
 
+		System.out.println(joao.getSaldo());
 
+		joao.saca(598.1);
 
+		joao.depositaValor(3353.9);
 
-
-
-
+		
 
 
 	}
