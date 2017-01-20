@@ -5,7 +5,6 @@ class Funcionario{
 		
 		joao.titular = new Cliente ();
 
-
 		joao.titular.nome = "JOAO DORIS";
 		joao.depositaValor(599.1);
 		joao.numero = 221;
@@ -18,7 +17,7 @@ class Funcionario{
 		joao.saca(598.1);
 
 		joao.depositaValor(3353.9);
-
+		joao.
 		
 
 
