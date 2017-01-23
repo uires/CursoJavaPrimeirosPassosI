@@ -51,7 +51,7 @@ class Programa{
 
 	
 		
-		uires.imprimirDadosConta("Jesus");
+		uires.imprimirDadosConta(uires.Conta);
 
 
 

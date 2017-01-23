@@ -14,7 +14,7 @@ class FuncionariosEmpressa{
 		}
 	}
 
-	}
+	
 
 	public boolean contem(InformacoesFuncionario funcionario1){
 
@@ -23,10 +23,11 @@ class FuncionariosEmpressa{
 				return true;				
 			}
 		}return false;
-	}	
+	}
+}	
 
 
-}
+
 
 
 
@@ -78,8 +79,5 @@ class FuncionarioModelo{
 		funcionario1.informacoes[3].salarioFuncionario = 4232.1;
 
 		funcionario1.imprimeFuncionarios();
-	
-
-
 	}
-}
+}	
